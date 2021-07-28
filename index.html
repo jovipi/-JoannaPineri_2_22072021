@@ -62,12 +62,12 @@
                   
                 <form method="POST" action="traitement.php">
                     <!--Bouton de Position-->
-                    <label for ="button_position"><i class="fa fa-map-marker" aria-hidden="true"></i></label> : <input type="radio" name="button_position" id="button_position">
+                    <label for ="button_position"><i class="fa fa-map-marker" aria-hidden="true"></i></label><input type="hidden" name="button_position" id="button_position">
                     <!--Zone de Recherche-->
-                    <label for="search"> : <input type="search" name="search_city" id="search" placeholder="Marseille,France" autofocus required />
+                    <label for="search"><input type="search" name="search_city" id="search" placeholder="Marseille,France" autofocus required />
                     </label>
                     <!--Bouton de recherche-->
-                    <label for="button_search"><i class="fa fa-search" aria-hidden="true"></i></label> : <input type="radio" name="button_search" id="button_search">
+                    <label for="button_search"><i class="fa fa-search" aria-hidden="true"></i></label><input type="hidden" name="button_search" id="button_search">
                     
                 </form>
                 
@@ -78,7 +78,7 @@
                 </span>
                         <form method="POST" action="traitement.php">
                             <!--Bouton Economique-->
-                            <input type="checkbox" name="economique" id="economique"/><label for="economique"><i class="fas fa-money-bill-wave"></i>Economique</label>
+                            <input type="checkbox" name="economique" id="economique"/><label for="economique"><i class="fas fa-money-bill-wave"></i>>Economique</label>
                              
                             <!--Bouton Romantique-->
                             <input type="checkbox" name="romantique" id="romantique" /><label for="romantique"><i class="fas fa-heart"></i>Romantique</label>
