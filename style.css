@@ -37,6 +37,14 @@ Grey Background:#F2F2F2;
   height: 100%;
   object-fit: cover;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 /*--------Fonts---------------------------------------------------------------*/
 
@@ -64,30 +72,69 @@ body {
 /*----------------------------------------------------------------------------*/
 /*                                Header                                      */
 /*----------------------------------------------------------------------------*/
+.header {
+  display: block;
+}
+
+.header_main {
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
 header ul {
   display: flex;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  font-size: 24px;
+  margin-top: 10px;
+}
+/*Logo*/
+
+#logo {
+  display: block;
+  width: auto;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+nav {
+  display: block;
+  order: 3;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
-header li {
-  list-style: none;
-  text-decoration: none;
-  padding-bottom: 20px;
-  display: block;
+ul {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
+
 #signup {
-  font-family: "Raleway";
-  font-size: 22px;
-  width: calc(100% - 150px);
-  padding: 0px 30px 0px 0px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: flex-end;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #0065fc;
+  text-decoration: none;
+  font-weight: 700;
+  flex-wrap: wrap;
+  font-family: "Raleway";
+  font-size: 18px;
+  width: calc(100% - 160px);
 }
 #signup a {
   color: #0065fc;
@@ -98,7 +145,7 @@ header li {
   width: 50%;
   text-align: center;
   border-bottom: 3px solid #f2f2f2;
-  margin: 20px 0px 0px 0px;
+  padding: 10px;
 }
 header nav .heberge_marseille:hover,
 header nav .activ_marseille:hover {
@@ -117,13 +164,6 @@ header nav .activ-marseille:focus {
 .activ_marseille a {
   color: black;
 }
-/*Logo*/
-
-#logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
 /* Navigation*/
 
@@ -134,46 +174,40 @@ header nav .activ-marseille:focus {
 /*---------------------------------------------------------------------*/
 
 /*Header Main*/
+section .main {
+  display: block;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
 
 h1 {
-  display: flex;
+  display: block;
   text-align: start;
-  padding-top: 50%;
-  font-size: 1.5em;
-  font-family: "Raleway", sans-serif;
+  margin-block-start: 10%;
+  margin-block-end: 5%;
   font-weight: bold;
-  padding-left: 10px;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
-.title_main p {
-  padding-left: 10px;
-  padding-bottom: 20px;
-  font-size: 0.8em;
-}
-
-.main {
-  padding: 0px 30px;
-}
-
-.main h1 {
-  margin-bottom: 30px;
-  margin: 20px 0px 30px 0px;
+.sous_titre {
+  padding-top: 0%;
+  width: 100%;
+  font-size: 0.9em;
 }
 
 /*Formulaire*/
 .formulaire_boutons {
   display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-  padding-left: 2px;
   width: 100%;
-  top: 20px;
+  padding-top: 0px;
+  height: 50%;
 }
 
-/*Boutons (a revoir)*/
+/*Boutons*/
 .position_button {
-  min-width: 70px;
-  height: 70px;
+  min-width: 60px;
+  height: 60px;
   border: 1px solid #f2f2f2;
   background: #f2f2f2;
   text-align: center;
@@ -188,10 +222,11 @@ h1 {
 }
 
 #search {
-  width: 100%;
+  height: 60px;
+  min-width: 75%;
   border: 3px solid #f2f2f2;
   padding: 0px 0px 0px 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Raleway";
   font-weight: bold;
 }
@@ -205,8 +240,8 @@ h1 {
 }
 
 .search_button {
-  min-width: 70px;
-  height: 70px;
+  min-width: 60px;
+  height: 60px;
   border: 1px solid #0065fc;
   background: #0065fc;
   text-align: center;
@@ -224,58 +259,91 @@ h1 {
 /*Bloc_Filtres*/
 .filtres_bloc {
   display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  width: 25%;
 }
 
-/*Titre h2*/
-h2 {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  font-size: 2em;
+/*Titre h3*/
+h3 {
+  width: 100%;
+  margin: 0 2rem 1rem 0;
+}
+.titre_filtre {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 /*Filtres*/
 
-.filtres_bloc {
-  display: flex;
-  flex-direction: column;
-  flex: wrap;
-}
-
 .button-filters {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin: 10px 0px 20px 0px;
-  flex-wrap: wrap;
+  margin-right: 0.75rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 0.75rem;
+  transition: background 0.5s;
+  cursor: pointer;
 }
 
-input[type="checkbox"] + label {
-  overflow: hidden;
-  border: 4px #f2f2f2 solid;
-  border-radius: 40px 0px 0px 40px;
+.button_filtre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  margin: -2px;
+  background-color: #deebff;
+  border-radius: 100%;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 0.75rem;
+  transition: background 0.5s;
+  cursor: pointer;
 }
 
 .circle-icon {
-  display: block;
-  color: #0065fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  margin: -2px;
   background-color: #deebff;
-  font-size: 18px;
-  border: 3px solid #f2f2f2;
   border-radius: 100%;
-  height: 40px;
-  min-width: 40px;
-  margin-right: 15px;
-  position: relative;
-  padding-left: 9px;
-  padding-top: 7px;
-  line-height: 5px;
-  bottom: 12px;
 }
 
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa,
+.fas {
+  font-weight: 900;
+}
+.fas {
+  color: #0065fc;
+}
 #filters:hover {
   box-shadow: 0px 0px 10px #0065fc;
 }
@@ -290,28 +358,26 @@ input[type="checkbox"] + label {
 
 /*Infomation*/
 .info {
-  display: block;
+  display: flex;
+  align-items: center;
   text-align: start;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  font-size: 1.3em;
-  line-height: 0px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 5px;
+  font-size: 0.9em;
+  width: 100%;
 }
 /*Icone information*/
 .circle-info {
   display: block;
   color: #0065fc;
-  font-size: 18px;
+  font-size: 12px;
   border: 3px solid #f2f2f2;
   border-radius: 100%;
-  height: 40px;
-  min-width: 40px;
-  margin-right: 10px;
+  height: 20px;
+  min-width: 20px;
   position: relative;
-  padding-left: 15px;
-  padding-top: 7px;
-  line-height: 5px;
-  bottom: 10px;
+  padding-left: 5px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -320,18 +386,25 @@ input[type="checkbox"] + label {
 #bloc-pop {
   background-color: #f2f2f2;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px 30px 30px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
   width: 100%;
 }
 .bloc_pop {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 20px;
   width: 100%;
+}
+.bloc_pop h2 {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.bloc_pop .fas {
+  color: black;
 }
 .hotel {
   border-radius: 35px;
@@ -342,7 +415,6 @@ input[type="checkbox"] + label {
   display: flex;
   height: 175px;
   width: 100%;
-  position: relative;
 }
 .hotel {
   transform: translate(1px, -2px);
@@ -352,7 +424,6 @@ input[type="checkbox"] + label {
   width: 100%;
   height: 100%;
   border-radius: 35px 0px 0px 35px;
-  margin: 0px 0px 15px 0px;
 }
 .cadre_pop:hover {
   transform: scale(1.05);
@@ -367,27 +438,23 @@ input[type="checkbox"] + label {
 
 .cadre_text {
   display: block;
-  float: left;
-  padding: 10px 10px 10px 10px;
   min-width: 50%;
-  position: relative;
-  padding-top: 20px;
 }
 
-h3 {
-  font-size: 1.1em;
+.cadre_text h3 {
+  font-size: 0.8em;
   color: black;
   font-weight: bold;
+  margin-block-start: 20px;
 }
 
 p {
-  font-size: 0.8em;
-  padding-top: 20px;
+  font-size: 0.7em;
   color: black;
   padding-bottom: 50px;
 }
-.etoile {
-  position: absolute;
+.etoiles {
+  height: 10px;
 }
 
 .blue-star {
@@ -402,23 +469,21 @@ p {
 #nom_hebergement_marseille {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 50px 0px 0px 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .bloc_section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-bottom: 20px;
-  font-size: 20px;
+  display: block;
   width: 100%;
-  height: 100%;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-right: 40px;
 }
-
-h2 {
-  padding-bottom: 10px;
+.bloc_section h2 {
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .etablissement {
@@ -427,10 +492,6 @@ h2 {
   box-shadow: 0px 0px 0px grey;
   height: 400px;
   width: 800px;
-  padding-bottom: 10px;
-  width: 100%;
-  align-items: center;
-  margin-left: 10px;
 }
 
 .etablissement {
@@ -439,12 +500,10 @@ h2 {
 
 .cadre_etablissement {
   display: block;
-  width: 400px;
-  height: 300px;
+  width: 370px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
-  position: relative;
-  padding-bottom: 10px;
 }
 
 .cadre_etablissement:hover {
@@ -453,48 +512,55 @@ h2 {
 }
 .cadre_etablissement img {
   width: 100%;
-  height: 70%;
+  height: 60%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 .etablissement_cadre_text {
   display: block;
-  bottom: 80px;
-  min-width: 80%;
-  text-align: start;
-  position: relative;
-  line-height: 5px;
-  padding-left: 10px;
+  text-align: justify;
+  min-width: 50%;
+  position: absolute;
+  bottom: 150px;
+  padding-left: 30px;
 }
-
+.etablissement_cadre_text h3 {
+  width: 100%;
+  text-align: start;
+  font-size: 0.9em;
+  color: black;
+  font-weight: bold;
+}
+p {
+  font-size: 0.7em;
+  color: black;
+  padding-bottom: 20px;
+}
 .etoile_etablissement {
-  position: relative;
-  bottom: 30px;
+  height: 10px;
 }
 
 .affiche_plus {
-  position: relative;
-  margin: 60px 60px 60px 60px;
   width: 100%;
+  position: relative;
+  padding-top: 20px;
   font-weight: bold;
   color: black;
   font-size: 1em;
-  padding-left: 40px;
 }
 /*----------------------------------------------Activities--------------------------------------------------------------------*/
 
 #activite_bloc_marseille {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 50px 0px 0px 0px;
+  width: 100%;
 }
 
 .bloc_section2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  display: block;
   margin-bottom: 20px;
   font-size: 20px;
   width: 100%;
@@ -510,23 +576,20 @@ h2 {
   width: 800px;
   padding-bottom: 10px;
   width: 100%;
-  align-items: center;
 }
 
 h2 {
   text-align: start;
   padding-right: 70px;
   padding-bottom: 20px;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .cadre_activites {
   display: block;
-  width: 400px;
-  height: 300px;
+  width: 370px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
-  position: relative;
-  padding-bottom: 30px;
 }
 .cadre_activites {
   transform: translate(1px, -2px);
@@ -541,11 +604,11 @@ h2 {
 
 .activites_cadre_text {
   display: block;
+  position: relative;
   bottom: 60px;
   left: 10px;
   min-width: 100%;
   text-align: start;
-  position: relative;
 }
 
 .cadre_activites:hover {
@@ -555,25 +618,39 @@ h2 {
 /*----------------------------------------------Footer-------------------------------------------------------------------------*/
 
 footer {
-  background-color: #f2f2f2;
-  padding: 50px;
   width: 100%;
+  display: block;
 }
 
 .bloc_footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background: #f2f2f2;
+  padding: 2rem 1.5rem 1rem 1.5rem;
 }
 footer li {
   font-size: 16px;
   margin: 20px;
-  list-style-type: none;
+  padding-bottom: 0.25rem;
+  padding-left: 0;
+  list-style: none;
+}
+footer ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 footer a {
   color: black;
 }
 h3 {
-  padding-right: 10px;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
