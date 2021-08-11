@@ -298,7 +298,6 @@ h3 {
 .checkbox {
   display: flex;
   align-items: center;
-
   transition: background 0.5s;
   cursor: pointer;
 }
@@ -484,7 +483,6 @@ p {
 .etablissement_cadre_text {
   display: block;
   text-align: justify;
-  min-width: 50%;
   position: absolute;
   bottom: 150px;
   padding-left: 30px;
@@ -542,11 +540,11 @@ p {
   padding-bottom: 10px;
 }
 
-h2 {
+.activite_cadre_text h3 {
   text-align: start;
   padding-right: 70px;
   padding-bottom: 20px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 .cadre_activites {
   display: block;
@@ -571,7 +569,6 @@ h2 {
   position: relative;
   bottom: 60px;
   left: 10px;
-  min-width: 100%;
   text-align: start;
 }
 
