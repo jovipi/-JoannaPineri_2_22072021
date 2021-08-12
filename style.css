@@ -105,7 +105,6 @@ header ul {
 }
 nav {
   display: block;
-  order: 3;
   width: 100%;
 }
 nav ul {
@@ -381,33 +380,39 @@ label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px;
   width: 100%;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 .bloc_pop {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin: 20px;
   font-size: 20px;
   width: 100%;
+  padding: 10px 0px 0px 0px;
 }
 .bloc_pop h2 {
   font-size: 1em;
   font-weight: bold;
+  padding-bottom: 20px;
+  width: 100%;
 }
 .bloc_pop .fas {
   color: black;
 }
 .hotel {
-  border-radius: 35px;
+  border-radius: 20px;
   border: 7px solid white;
   background: white;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 20px 20px 20px;
   box-shadow: 0px 0px 10px grey;
   display: flex;
-  height: 175px;
+  height: 150px;
   width: 100%;
+  overflow: hidden;
+  padding: 0px;
 }
 .hotel {
   transform: translate(1px, -2px);
@@ -416,7 +421,8 @@ label {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 35px 0px 0px 35px;
+  padding-right: 5px;
+  border-radius: 10px;
 }
 .cadre_pop:hover {
   transform: scale(1.05);
@@ -425,8 +431,8 @@ label {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 35px 0px 0px 35px;
-  padding-right: 20px;
+  padding-right: 10px;
+  border-radius: 10px;
 }
 
 .cadre_text {
@@ -435,19 +441,19 @@ label {
 }
 
 .cadre_text h3 {
-  font-size: 0.8em;
+  font-size: 1em;
   color: black;
   font-weight: bold;
-  margin-block-start: 20px;
+  margin-block-end: 0.5em;
 }
 
-p {
+.cadre_text p {
   font-size: 0.7em;
   color: black;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .etoiles {
-  height: 10px;
+  font-size: 10px;
 }
 
 .blue-star {
@@ -475,25 +481,24 @@ p {
   margin-right: 40px;
 }
 .bloc_section h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 10px;
 }
 
 .etablissement {
   display: block;
-  border-radius: 35px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
   width: 100%;
-  margin-bottom: 20px;
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .cadre_etablissement {
   display: block;
   width: 100%;
-  height: 180px;
-  box-shadow: 0px 0px 10px grey;
+  height: 150px;
+  padding: 5px;
 }
 
 .cadre_etablissement:hover {
@@ -503,17 +508,18 @@ p {
 .cadre_etablissement img {
   width: 100%;
   height: 100%;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 .etablissement_cadre_text {
   display: block;
   text-align: start;
-  padding: 15px 30px 15px 30px;
+  padding: 5px 10px 5px 10px;
 }
 .etablissement_cadre_text h3 {
   width: 100%;
   text-align: start;
-  font-size: 1em;
+  font-size: 1.2em;
   color: black;
   font-weight: bold;
 }
@@ -531,8 +537,8 @@ p {
   position: relative;
   font-weight: bold;
   color: black;
-  font-size: 1em;
-  bottom: 100px;
+  font-size: 1.2em;
+  padding: 2px 2px 40px 2px;
 }
 /*----------------------------------------------Activities--------------------------------------------------------------------*/
 
@@ -551,20 +557,19 @@ p {
   font-size: 20px;
   width: 100%;
   height: 100%;
-  margin-left: 10px;
+  margin: 0px 5px 0px 5px;
 }
 .bloc_section2 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
-  padding: 20px;
+  padding: 20px 10px 35px 5px;
 }
 .activities {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
-  height: 400px;
+  height: 100%;
   width: 100%;
-  padding-bottom: 10px;
 }
 
 .activite_cadre_text h3 {
@@ -585,7 +590,7 @@ p {
 
 .cadre_activites img {
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
@@ -593,9 +598,10 @@ p {
 .activites_cadre_text {
   display: block;
   position: relative;
-  bottom: 60px;
   left: 10px;
   text-align: start;
+  padding: 10px;
+  bottom: 60px;
 }
 .activites_cadre_text h3 {
   font-size: 1em;
@@ -618,10 +624,9 @@ footer {
   padding: 2rem 1.5rem 1rem 1.5rem;
 }
 footer li {
-  font-size: 16px;
-  margin: 20px;
+  font-size: 19px;
+  margin: 15px 0px 15px 0px;
   padding-bottom: 0.25rem;
-  padding-left: 0;
   list-style: none;
 }
 footer ul {
@@ -630,7 +635,6 @@ footer ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 
 footer a {
@@ -638,10 +642,8 @@ footer a {
 }
 h3 {
   display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font-size: 1.5em;
   font-weight: bold;
+  margin-inline-end: 20px;
+  padding: 10px 0px 10px 0px;
 }
