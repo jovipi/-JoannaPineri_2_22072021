@@ -95,7 +95,7 @@ header ul {
   display: block;
   width: auto;
   margin-left: 10px;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: bold;
 }
 #logo img {
@@ -144,7 +144,8 @@ ul {
   width: 50%;
   text-align: center;
   border-bottom: 3px solid #f2f2f2;
-  padding: 10px;
+  padding: 9px;
+  font-size: 16px;
 }
 header nav .heberge_marseille:hover,
 header nav .activ_marseille:hover {
@@ -184,16 +185,16 @@ h1 {
   margin-block-start: 10%;
   margin-block-end: 5%;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
-  margin: 20px 40px 5px 20px;
+  margin: 20px 40px 5px 25px;
 }
 
 .sous_titre {
   padding-top: 0%;
   width: 100%;
   font-size: 0.85em;
-  margin: 10px 20px 20px 20px;
+  margin: 10px 20px 20px 25px;
 }
 
 /*Formulaire*/
@@ -202,7 +203,7 @@ h1 {
   width: 100%;
   padding-top: 0px;
   height: 50px;
-  margin: 10px 10px 5px 10px;
+  margin: 10px 10px 5px 25px;
 }
 
 /*Boutons*/
@@ -224,7 +225,7 @@ h1 {
 }
 
 #search {
-  width: calc(100% - 110px);
+  width: calc(100% - 120px);
   border: 3px solid #f2f2f2;
   padding: 0px 0px 0px 20px;
   font-size: 17px;
@@ -288,6 +289,7 @@ h3 {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
+  margin: 0px 0px 0px 20px;
 }
 
 label {
@@ -298,7 +300,7 @@ label {
   position: relative;
   z-index: 0;
   height: 50px;
-  margin: 3px;
+  margin: 9px;
 }
 
 .circle-icon {
@@ -346,13 +348,12 @@ label {
   display: flex;
   align-items: center;
   text-align: start;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   padding-top: 30px;
   padding-left: 2px;
   font-size: 1.075em;
   width: 100%;
-  margin: 0px 10px 10px 10px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .info p {
   padding: 10px;
@@ -370,6 +371,7 @@ label {
   position: relative;
   padding-left: 5px;
   bottom: 10px;
+  margin: 20px 0px 20px 20px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -381,8 +383,8 @@ label {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding-bottom: 20px;
-  padding-top: 5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
 .bloc_pop {
   display: flex;
@@ -444,13 +446,12 @@ label {
   font-size: 1em;
   color: black;
   font-weight: bold;
-  margin-block-end: 0.5em;
 }
 
 .cadre_text p {
   font-size: 0.7em;
   color: black;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .etoiles {
   font-size: 10px;
@@ -476,14 +477,12 @@ label {
 .bloc_section {
   display: block;
   width: 100%;
-  margin-bottom: 10px;
-  margin-top: 40px;
-  margin-right: 40px;
+  margin-top: 10px;
 }
 .bloc_section h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
-  padding: 10px;
+  padding: 10px 0px 15px 25px;
 }
 
 .etablissement {
@@ -491,13 +490,13 @@ label {
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .cadre_etablissement {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 120px;
   padding: 5px;
 }
 
@@ -553,16 +552,16 @@ p {
 
 .bloc_section2 {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 20px;
   width: 100%;
   height: 100%;
   margin: 0px 5px 0px 5px;
 }
 .bloc_section2 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
-  padding: 20px 10px 35px 5px;
+  padding: 10px 0px 20px 0px;
 }
 .activities {
   display: block;
@@ -580,7 +579,7 @@ p {
 .cadre_activites {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 220px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
 }
@@ -600,8 +599,8 @@ p {
   position: relative;
   left: 10px;
   text-align: start;
-  padding: 10px;
   bottom: 60px;
+  padding: 0px 0px 0px 10px;
 }
 .activites_cadre_text h3 {
   font-size: 1em;
@@ -642,8 +641,8 @@ footer a {
 }
 h3 {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   margin-inline-end: 20px;
-  padding: 10px 0px 10px 0px;
+  padding: 20px 0px 10px 2px;
 }
