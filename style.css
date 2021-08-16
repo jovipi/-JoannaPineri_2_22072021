@@ -15,7 +15,6 @@
 Blue:#0065FC;
 Light Blue:#DEEBFF;
 Grey Background:#F2F2F2;
-
 /* -------------------- Reset -------------------------- */
 
 * {
@@ -261,7 +260,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -484,7 +483,7 @@ label {
   display: block;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
-  width: 100%;
+  width: 95%;
   margin-bottom: 15px;
 }
 
@@ -562,7 +561,7 @@ p {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
@@ -618,17 +617,13 @@ footer {
   padding: 2rem 1.5rem 1rem 1.5rem;
 }
 footer li {
-  font-size: 19px;
-  margin: 15px 0px 15px 0px;
+  font-size: 15px;
+  padding: 10px 0px 10px 0px;
   padding-bottom: 0.25rem;
   list-style: none;
 }
 footer ul {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 footer a {
@@ -636,10 +631,9 @@ footer a {
 }
 h3 {
   display: block;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-inline-end: 20px;
-  padding: 20px 0px 10px 2px;
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 15px 0px 0px 2px;
 }
 /*------------------------------------------------------------------------------------------------------*/
 /*                          Medias Queries pour Responsive Tablette et Desktop                          */
@@ -699,11 +693,10 @@ footer nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
+  flex-direction: column;
 }
 
 .bloc_a_propos {
-  width: 15rem;
 }
 .bloc_nos_hebergements {
   width: 15rem;
