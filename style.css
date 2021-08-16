@@ -63,6 +63,11 @@ body {
   padding: 0;
 }
 
+.container {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /*----------------------------------------------------------------------------*/
 /*                                Header                                      */
 /*----------------------------------------------------------------------------*/
@@ -80,14 +85,14 @@ header ul {
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 /*Logo*/
 
 #logo {
   display: block;
   width: auto;
-  margin-left: 10px;
+  padding-left: 10px;
   font-size: 60px;
   font-weight: bold;
 }
@@ -185,7 +190,7 @@ h1 {
 
 .sous_titre {
   padding-top: 0%;
-  width: 100%;
+  width: 70%;
   font-size: 0.85em;
   margin: 10px 20px 20px 25px;
 }
@@ -195,8 +200,7 @@ h1 {
   display: flex;
   width: 100%;
   padding-top: 0px;
-  height: 50px;
-  margin: 10px 10px 5px 25px;
+  padding: 10px 10px 5px 25px;
 }
 
 /*Boutons*/
@@ -381,9 +385,9 @@ label {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin: 20px;
   font-size: 20px;
   width: 100%;
+  margin: 1rem;
   padding: 10px 0px 0px 0px;
 }
 .bloc_pop h2 {
@@ -690,20 +694,43 @@ h3 {
     align-items: center;
     width: 30%;
   }
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-  }
-  .bloc_footer {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
+}
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bloc_a_propos {
+  width: 15rem;
+}
+.bloc_nos_hebergements {
+  width: 15rem;
+}
+.bloc_assistance {
+  width: 15rem;
 }
 
 /*Version Desktop*/
 
-@media all and (min-width: 990px) and (max-width: 1440px);
+@media all and (min-width: 990px) and (max-width: 1440px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header_main nav {
+    height: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
