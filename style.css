@@ -407,6 +407,7 @@ label {
 }
 
 .cadre_pop img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -420,17 +421,20 @@ label {
 }
 
 .cadre_text h3 {
+  display: block;
   font-size: 1em;
   color: black;
   font-weight: bold;
 }
 
 .cadre_text p {
+  display: block;
   font-size: 0.7em;
   color: black;
   padding-bottom: 35px;
 }
 .etoiles {
+  display: block;
   font-size: 10px;
 }
 
@@ -482,6 +486,7 @@ label {
 }
 
 .cadre_etablissement img {
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -493,6 +498,7 @@ label {
   padding: 5px 10px 5px 10px;
 }
 .etablissement_cadre_text h3 {
+  display: block;
   width: 100%;
   text-align: start;
   font-size: 1.1em;
@@ -500,7 +506,8 @@ label {
   font-weight: bold;
 }
 
-p {
+.etablissement_cadre_text p {
+  display: block;
   font-size: 0.9em;
   color: black;
   padding-bottom: 10px;
@@ -566,6 +573,7 @@ p {
 }
 
 .cadre_activites img {
+  display: block;
   width: 100%;
   height: 70%;
   object-fit: cover;
@@ -581,6 +589,7 @@ p {
   padding: 0px 0px 0px 10px;
 }
 .activites_cadre_text h3 {
+  display: block;
   font-size: 1em;
   color: black;
 }
@@ -754,21 +763,155 @@ footer a {
 }
 
 /*Version Desktop*/
+/* A ajouter dans un mediaqueries pour fixer
 
-@media all and (min-width: 991px) and (max-width: 1440px) {
+max-width: 1700px;
+margin: auto;
+*/
+
+@media all and (min-width: 991px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .header_main {
+  .header_main nav {
+    height: 90px;
+  }
+  .en_tete {
+    height: 100px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .heberge_marseille,
+  .activ_marseille {
+    width: 10%;
+    text-align: center;
+    border-bottom: none;
+    font-size: 18px;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #logo {
+    display: flex;
+    width: 65%;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #signup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #0065fc;
+    text-decoration: none;
+    font-weight: 700;
+    flex-wrap: wrap;
+    font-family: "Raleway";
+    font-size: 18px;
+    width: 10%;
+    order: 4;
+  }
+  ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .header_main nav {
-    height: 100px;
+  li #logo {
+    margin: auto;
   }
+  li .heberge_marseille {
+    width: 25%;
+    display: flex;
+  }
+  li .activ_marseille {
+    width: 25%;
+    display: flex;
+  }
+  #search {
+    max-width: 25%;
+    border: 3px solid #f2f2f2;
+    padding: 0px 0px 0px 20px;
+    font-size: 17px;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .search_button {
+    width: 140px;
+    height: 50px;
+    border: 1px solid #0065fc;
+    background: #0065fc;
+    text-align: center;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 17px;
+    margin-left: -90px;
+    cursor: pointer;
+  }
+  .search_button span {
+    display: block;
+  }
+  .search_button i {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+    text-align: start;
+    margin-block-start: 10%;
+    margin-block-end: 5%;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 20px 5px 20px;
+  }
+
+  .filtres_bloc {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .button_filters {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  label {
+    border: 2px solid #dedede;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+    height: 49px;
+    margin: 8px;
+  }
+
+  .formulaire_boutons {
+    display: flex;
+    width: 100%;
+    padding: 10px 2px 5px 10px;
+  }
+
   .container_desktop {
     display: flex;
     flex-wrap: nowrap;
@@ -803,6 +946,44 @@ footer a {
     align-items: center;
     width: 85%;
   }
+  .cadre_pop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    border-radius: 10px;
+  }
+  .cadre_pop img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 10px;
+    border-radius: 10px;
+  }
+
+  .cadre_text {
+    display: block;
+    min-width: 50%;
+  }
+
+  .cadre_text h3 {
+    display: block;
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+  }
+
+  .cadre_text p {
+    display: block;
+    font-size: 0.7em;
+    color: black;
+    padding-bottom: 35px;
+  }
+  .etoiles {
+    display: block;
+    font-size: 10px;
+  }
   #nom_hebergement_marseille {
     display: flex;
     background-color: #f2f2f2;
@@ -830,14 +1011,6 @@ footer a {
     font-size: 1.25em;
     padding: 10px 2px 30px 10px;
   }
-  #activite_marseille {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
-    width: 100%;
-  }
   .bloc_section2 {
     display: block;
     margin-bottom: 15px;
@@ -846,20 +1019,73 @@ footer a {
     height: 100%;
     padding: 30px 0px 15px 20px;
   }
-  .activities {
-    display: block;
-    border-radius: 35px;
-    box-shadow: 0px 0px 0px grey;
-    width: 70%;
-    height: 100%;
+  #activite_marseille {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+  .activities {
+    display: flex;
+    flex-direction: column;
+  }
+
   .cadre_activites {
     display: block;
-    width: 40%;
-    height: 500px;
+    width: 30%;
+    height: 530px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
   }
+  .petit {
+    width: 23%;
+    height: 200px;
+  }
+  
+  }
+  .activites_cadre_text {
+    padding-left: 5%;
+    width: 95%;
+    height: 70px;
+    flex: 20%;
+  }
+  .cadre_etablissement {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+  }
+
+  .cadre_etablissement img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+  .etablissement_cadre_text {
+    display: block;
+    text-align: start;
+    padding: 5px 10px 5px 10px;
+  }
+  .etablissement_cadre_text h3 {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+  }
+
+  .etablissement_cadre_text p {
+    display: block;
+    font-size: 0.9em;
+    color: black;
+    padding-bottom: 10px;
+  }
+  .etoile_etablissement {
+    height: 10px;
+  }
+
   footer nav {
     display: flex;
     flex-direction: row;
