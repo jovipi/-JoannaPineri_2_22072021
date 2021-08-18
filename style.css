@@ -606,6 +606,13 @@ footer li {
   padding-bottom: 0.25rem;
   list-style: none;
 }
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+  flex-direction: column;
+}
 footer ul {
   display: block;
 }
@@ -622,6 +629,13 @@ footer a {
 /*------------------------------------------------------------------------------------------------------*/
 /*                          Medias Queries pour Responsive Tablette et Desktop                          */
 /*------------------------------------------------------------------------------------------------------*/
+/*Footer pour mobile*/
+@media screen and (min-width: 320px) and (max-width: 539px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Pour Iphone 8*/
 @media screen and (min-width: 375px) and (max-width: 735px) {
   label {
@@ -629,8 +643,24 @@ footer a {
     margin: 10px;
   }
 }
+
 /* Pour Tablettes minis*/
 @media screen and (min-width: 540px) and (max-width: 735px) {
+  #nom_hebergement_marseille {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .etablissement {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+
   footer nav {
     display: flex;
     flex-direction: row;
@@ -714,18 +744,18 @@ footer a {
     bottom: 60px;
     padding: 0px 0px 0px 5px;
   }
-}
-footer nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2px;
-  flex-direction: column;
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px;
+    flex-direction: row;
+  }
 }
 
 /*Version Desktop*/
 
-@media all and (min-width: 990px) and (max-width: 1440px) {
+@media all and (min-width: 991px) and (max-width: 1440px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -739,21 +769,24 @@ footer nav {
   .header_main nav {
     height: 100px;
   }
-  nav ul {
+  .container_desktop {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   #bloc-pop {
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 30%;
-    padding-top: 0px;
-    padding-bottom: 10px;
+    width: 55%;
     border-radius: 20px;
+    order: 2;
+    align-items: center;
+    justify-content: flex-start;
   }
   .bloc_pop {
     display: flex;
@@ -772,12 +805,15 @@ footer nav {
   }
   #nom_hebergement_marseille {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 80%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    order: 1;
+    align-content: flex-start;
+    margin-bottom: 45px;
+    padding: 10px 10px 30px 10px;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .etablissement {
     display: block;
@@ -823,5 +859,18 @@ footer nav {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  footer li {
+    font-size: 16px;
+    padding: 5px;
+    padding-bottom: 0.25rem;
+    list-style: none;
   }
 }
