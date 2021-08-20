@@ -553,7 +553,6 @@ label {
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
   width: 100%;
-  height: 100%;
   padding: 15px;
 }
 .carte_1 {
@@ -588,6 +587,13 @@ label {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
+img .img1 {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
 
 .cadre_activites p {
   display: block;
@@ -599,6 +605,11 @@ label {
 
 .cadre_activites:hover {
   transform: scale(1.05); /* Agrandi les cartes au survol */
+}
+.activities_cards1,
+.activities_cards3 {
+  width: 80%;
+  height: 200px;
 }
 
 /*----------------------------------------------Footer-------------------------------------------------------------------------*/
@@ -1028,45 +1039,46 @@ margin: auto;
     font-size: 1.25em;
     padding: 10px 2px 30px 10px;
   }
-  .bloc_section2 {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    padding: 30px 0px 15px 20px;
-  }
-
+  /*-----------------Activites-----------------------------------------*/
   .bloc_section2 {
     display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .carte_1 {
-    width: 50%;
-    padding: 0px 2px 20px 20px;
+    width: 75%;
   }
   .carte_2 {
-    width: 50%;
-    padding: 0px 2px 20px 20px;
+    width: 75%;
   }
 
   .carte_3 {
-    width: 50%;
-    padding: 0px 2px 20px 20px;
+    width: 75%;
   }
   .carte_4 {
-    width: 50%;
-    padding: 0px 2px 20px 20px;
+    width: 75%;
   }
   .cadre_activites {
     display: block;
-    width: 30%;
-    height: 530px;
+    width: 100%;
+    height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
   }
+  .cadre_activites.cadre_1 {
+    height: 400px;
+  }
+
+  img.img1 {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
+  .cadre_activites.cadre_2 {
+    height: 185px;
+  }
+
+  /*----Hebergements-------------------------------------------------------------------*/
   .cadre_etablissement {
     display: block;
     width: 100%;
