@@ -552,38 +552,49 @@ label {
   display: block;
   border-radius: 35px;
   box-shadow: 0px 0px 0px grey;
-  width: 95%;
+  width: 100%;
   height: 100%;
+  padding: 15px;
+}
+.carte_1 {
+  width: 100%;
+}
+.carte_2 {
+  width: 100%;
 }
 
-.activite_cadre_text h3 {
-  text-align: start;
-  font-size: 0.8em;
-  padding: 20px;
+.carte_3 {
+  width: 100%;
 }
+.carte_4 {
+  width: 100%;
+}
+
 .cadre_activites {
   display: block;
   width: 100%;
-  height: 220px;
+  height: 170px;
+  height: 200p;
   border-radius: 20px;
   box-shadow: 0px 0px 10px grey;
 }
 .cadre_activites {
   transform: translate(1px, -2px);
 }
-
 .cadre_activites img {
   display: block;
   width: 100%;
-  height: 70%;
+  height: 125px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
-.activites_cadre_text p {
+.cadre_activites p {
   display: block;
-  font-size: 1em;
+  font-size: 0.7em;
+  font-weight: 800;
   color: black;
+  padding: 15px;
 }
 
 .cadre_activites:hover {
@@ -725,26 +736,41 @@ footer a {
   }
   #activite_marseille {
     display: flex;
-    align-items: baseline;
+  }
+  .bloc_section2 {
+    display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin: 2vw 3vw;
   }
   .activities {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     width: 30%;
   }
-  .activites_cadre_text {
-    display: block;
-    position: relative;
-    left: 10px;
-    text-align: start;
-    bottom: 60px;
-    padding: 0px 0px 0px 5px;
+
+  .carte_1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
+  .carte_2 {
+    display: flex;
+    width: 100%;
+  }
+
+  .carte_3 {
+    display: flex;
+    width: 100%;
+  }
+  .carte_4 {
+    display: flex;
+    width: 100%;
+  }
+
   footer nav {
     display: flex;
     flex-wrap: wrap;
@@ -1010,8 +1036,6 @@ margin: auto;
     height: 100%;
     padding: 30px 0px 15px 20px;
   }
-  #activite_marseille {
-  }
 
   .bloc_section2 {
     display: flex;
@@ -1019,24 +1043,29 @@ margin: auto;
     width: 95%;
     margin: auto;
   }
-  .activities {
+  .carte_1 {
+    width: 50%;
+    padding: 0px 2px 20px 20px;
   }
-  .activities_cards1 {
+  .carte_2 {
+    width: 50%;
+    padding: 0px 2px 20px 20px;
   }
 
+  .carte_3 {
+    width: 50%;
+    padding: 0px 2px 20px 20px;
+  }
+  .carte_4 {
+    width: 50%;
+    padding: 0px 2px 20px 20px;
+  }
   .cadre_activites {
     display: block;
     width: 30%;
     height: 530px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px grey;
-  }
-
-  .activites_cadre_text {
-    padding-left: 5%;
-    width: 95%;
-    height: 70px;
-    flex: 20%;
   }
   .cadre_etablissement {
     display: block;
