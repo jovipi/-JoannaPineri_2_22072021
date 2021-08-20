@@ -580,15 +580,7 @@ label {
   border-radius: 20px 20px 0px 0px;
 }
 
-.activites_cadre_text {
-  display: block;
-  position: relative;
-  left: 10px;
-  text-align: start;
-  bottom: 60px;
-  padding: 0px 0px 0px 10px;
-}
-.activites_cadre_text h3 {
+.activites_cadre_text p {
   display: block;
   font-size: 1em;
   color: black;
@@ -1019,13 +1011,17 @@ margin: auto;
     padding: 30px 0px 15px 20px;
   }
   #activite_marseille {
+  }
+
+  .bloc_section2 {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
   }
   .activities {
-    display: flex;
-    flex-direction: column;
+  }
+  .activities_cards1 {
   }
 
   .cadre_activites {
