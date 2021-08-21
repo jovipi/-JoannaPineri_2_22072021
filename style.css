@@ -861,22 +861,36 @@ footer a {
     text-align: center;
     border-bottom: none;
     border-top: 6px solid white;
-    font-size: 18px;
+    font-size: 16px;
     order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px 0px 0px;
   }
-  header nav.heberge_marseille:hover a,
-  header nav.activ-marseille:hover a {
-    border-color: #0065fc;
+  .activ_marseille,
+  .heberge_marseille {
+    margin: 0px 0px 0px 0px;
+    border-top: 3px solid #f2f2f2;
+    padding: 40px;
+  }
+
+  header nav .heberge_marseille:hover,
+  header nav .activ_marseille:hover {
     border-bottom: none;
-    border-top: #0065fc;
-  }
-  header nav.heberge_marseille:focus,
-  header nav.activ-marseille:focus {
-    color: #f2f2f2;
     border-top: 3px solid #0065fc;
+  }
+
+  header nav .heberge_marseille:hover a,
+  header nav .activ_marseille:hover a {
+    color: #0065fc;
+  }
+
+  header nav .heberge_marseille:focus,
+  header nav .activ_marseille:focus {
+    color: #f2f2f2;
+    border-top: 3px solid #f2f2f2;
+    border-bottom: none;
   }
   #logo {
     display: flex;
@@ -885,6 +899,7 @@ footer a {
     font-weight: bold;
     justify-content: flex-start;
     align-items: center;
+    padding: 15px;
   }
   #signup {
     display: flex;
@@ -897,9 +912,10 @@ footer a {
     font-weight: 700;
     flex-wrap: wrap;
     font-family: "Raleway";
-    font-size: 18px;
+    font-size: 16px;
     width: 8%;
     order: 4;
+    padding: 2px 20px 0px 0px;
   }
   ul {
     display: flex;
@@ -952,7 +968,12 @@ footer a {
     font-weight: bold;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 5px 20px 5px 20px;
+    margin: 20px 20px 5px 20px;
+  }
+  .sous_titre {
+    padding-top: 0%;
+    font-size: 1.02em;
+    margin: 10px 0px 10px 20px;
   }
 
   .filtres_bloc {
@@ -979,11 +1000,20 @@ footer a {
     height: 49px;
     margin: 8px;
   }
-
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
   .formulaire_boutons {
     display: flex;
     width: 100%;
     padding: 10px 2px 5px 10px;
+  }
+  .circle-icon:active,
+  .circle-icon:hover {
+    box-shadow: 0px 0px 10px #0065fc;
   }
 
   .container_desktop {
@@ -1017,7 +1047,7 @@ footer a {
     align-items: center;
   }
   .bloc_pop h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     padding-bottom: 20px;
     width: 100%;
@@ -1052,7 +1082,7 @@ footer a {
 
   .cadre_text h3 {
     display: block;
-    font-size: 0.97em;
+    font-size: 0.96em;
     color: black;
     font-weight: bold;
     padding: 0px 0px 5px 0px;
@@ -1075,10 +1105,15 @@ footer a {
     order: 1;
     align-content: flex-start;
     margin-bottom: px;
-    padding: 30px 10px 30px 10px;
+    padding: 30px 30px 30px 30px;
     width: 95%;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .bloc_section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 25px 25px 10px;
   }
   .etablissement {
     display: block;
@@ -1111,7 +1146,7 @@ footer a {
     display: block;
     width: 100%;
     text-align: start;
-    font-size: 1.1em;
+    font-size: 1em;
     color: black;
     font-weight: bold;
   }
@@ -1135,7 +1170,8 @@ footer a {
   }
   /*-----------------Activites-----------------------------------------*/
   .bloc_section1 h2 {
-    padding: 10px;
+    padding: 20px;
+    font-size: 1.5em;
   }
   .bloc_section2 {
     display: flex;
