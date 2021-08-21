@@ -1179,9 +1179,7 @@ margin: auto;
   /*-----Footer--------------------------------------------------------*/
   footer nav {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding: 5px;
+    flex-direction: column;
     font-size: 16px;
   }
   footer li {
@@ -1211,10 +1209,21 @@ margin: auto;
     align-items: flex-start;
     align-content: space-around;
   }
+  .bloc_a_propos {
+    padding-right: 200px;
+    padding-left: 30px;
+  }
   .bloc_nos_hebergements {
-    padding-right: 90px;
+    padding-right: 300px;
   }
   .bloc_assistance {
-    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
   }
 }
