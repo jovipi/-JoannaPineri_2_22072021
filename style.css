@@ -307,6 +307,9 @@ label {
 .fas {
   color: #0065fc;
 }
+.grey-star {
+  color: #8c8a8a;
+}
 
 #filters:hover {
   box-shadow: 0px 0px 10px #0065fc;
@@ -442,7 +445,7 @@ label {
   color: #0065fc;
 }
 .grey-star {
-  color: #f2f2f2;
+  color: #dcd8d8;
 }
 
 /*------------------------------------------------------Hotel-------------------------------------------------------------------*/
@@ -666,6 +669,9 @@ footer a {
     margin: 5px;
   }
 }
+.grey-star {
+  color: #dcd8d8;
+}
 
 /* Pour Tablettes minis*/
 @media screen and (min-width: 540px) and (max-width: 735px) {
@@ -693,6 +699,9 @@ footer a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .grey-star {
+    color: #dcd8d8;
   }
   .etablissement {
     display: flex;
@@ -753,6 +762,9 @@ footer a {
     font-weight: bold;
     padding: 5px 0px 5px 2px;
   }
+  .grey-star {
+    color: #dcd8d8;
+  }
   #nom_hebergement_marseille {
     display: flex;
     align-items: center;
@@ -773,7 +785,7 @@ footer a {
     padding: 0px 0px 5px 6px;
   }
   .affiche_plus {
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 2px 2px 20px 10px;
   }
   /*-------Activités----------------------------------------------------*/
@@ -1149,6 +1161,9 @@ footer a {
   .etoiles {
     display: block;
     font-size: 10px;
+  }
+  .grey-star {
+    color: #dcd8d8;
   }
   #nom_hebergement_marseille {
     display: flex;
