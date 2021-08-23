@@ -277,7 +277,7 @@ label {
   position: relative;
   z-index: 0;
   height: 49px;
-  margin: 2px;
+  margin: 5px;
 }
 
 .circle-icon {
@@ -407,7 +407,6 @@ label {
   padding-right: 5px;
   border-radius: 10px;
 }
-
 .cadre_pop img {
   display: block;
   width: 100%;
@@ -416,31 +415,27 @@ label {
   padding-right: 10px;
   border-radius: 10px;
 }
-
 .cadre_text {
   display: block;
-  min-width: 50%;
+  min-width: 52%;
 }
-
 .cadre_text h3 {
   display: block;
-  font-size: 0.95em;
+  font-size: 0.9em;
   color: black;
   padding: 10px 0px 10px 0px;
   font-weight: 800;
 }
-
 .cadre_text p {
   display: block;
   font-size: 0.8em;
   color: black;
-  padding: 0px 0px 45px 0px;
+  padding: 0px 0px 50px 0px;
 }
 .etoiles {
   display: block;
   font-size: 11px;
 }
-
 .blue-star {
   color: #0065fc;
 }
@@ -457,7 +452,6 @@ label {
   flex-wrap: wrap;
   width: 100%;
 }
-
 .bloc_section {
   display: block;
   width: 100%;
@@ -468,7 +462,6 @@ label {
   font-weight: 750;
   padding: 20px 25px 20px 10px;
 }
-
 .etablissement {
   display: block;
   border-radius: 20px;
@@ -480,14 +473,12 @@ label {
   cursor: pointer;
   transform: scale(1.1);
 }
-
 .cadre_etablissement {
   display: block;
   width: 100%;
   height: 120px;
   padding: 5px;
 }
-
 .cadre_etablissement img {
   display: block;
   width: 100%;
@@ -509,7 +500,6 @@ label {
   font-weight: 800;
   padding: 0px 0px 0px 10px;
 }
-
 .etablissement_cadre_text p {
   display: block;
   font-size: 0.8em;
@@ -520,7 +510,9 @@ label {
   font-size: 11px;
   padding: 0px 0px 0px 10px;
 }
-
+.grey-star {
+  color: #dcd8d8;
+}
 .affiche_plus {
   width: 100%;
   position: relative;
@@ -574,7 +566,6 @@ label {
 .carte_4 {
   width: 100%;
 }
-
 .cadre_activites {
   display: block;
   width: 100%;
@@ -600,7 +591,6 @@ img .img1 {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-
 .cadre_activites p {
   display: block;
   font-size: 0.7em;
@@ -608,7 +598,6 @@ img .img1 {
   color: black;
   padding: 15px;
 }
-
 .cadre_activites:hover {
   transform: scale(1.05); /* Agrandi les cartes au survol */
 }
@@ -624,7 +613,6 @@ footer {
   width: 100%;
   display: block;
 }
-
 .bloc_footer {
   background: #f2f2f2;
   padding: 1rem 1rem 1.5rem 1rem;
@@ -645,7 +633,6 @@ footer nav {
 footer ul {
   display: block;
 }
-
 footer a {
   color: black;
 }
@@ -668,30 +655,36 @@ footer a {
     height: 49px;
     margin: 5px;
   }
+  .grey-star {
+    color: #dcd8d8;
+  }
+  .cadre_text h3 {
+    display: block;
+    font-size: 0.9em;
+    color: black;
+    padding: 10px 0px 10px 0px;
+    font-weight: 800;
+  }
 }
-.grey-star {
-  color: #dcd8d8;
-}
-
 /* Pour Tablettes minis*/
 @media screen and (min-width: 540px) and (max-width: 735px) {
   .etoiles {
     display: block;
     font-size: 10px;
-    padding: 10px;
+    padding: 5px 0px 0px 0px;
   }
   .cadre_text h3 {
     display: block;
-    font-size: 1em;
+    font-size: 0.9em;
     color: black;
-    font-weight: bold;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
+    font-weight: 800;
   }
   .cadre_text p {
     display: block;
     font-size: 0.8em;
     color: black;
-    padding: 5px 0px 50px 10px;
+    padding: 5px 0px 50px 0px;
   }
   #nom_hebergement_marseille {
     display: flex;
@@ -699,6 +692,30 @@ footer a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+  }
+  .etablissement_cadre_text {
+    display: block;
+    text-align: start;
+    padding: 5px 35px 5px 0px;
+  }
+  .etablissement_cadre_text h3 {
+    display: block;
+    width: 100%;
+    text-align: start;
+    font-size: 0.88em;
+    color: black;
+    font-weight: 800;
+    padding: 0px 0px 0px 5px;
+  }
+  .etablissement_cadre_text p {
+    display: block;
+    font-size: 0.8em;
+    color: black;
+    padding: 3px 0px 5px 5px;
+  }
+  .etoile_etablissement {
+    font-size: 11px;
+    padding: 0px 0px 0px 5px;
   }
   .grey-star {
     color: #dcd8d8;
@@ -708,9 +725,13 @@ footer a {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 35%;
+    width: 40%;
   }
-
+  .bloc_section1 h2 {
+    font-size: 1.2em;
+    font-weight: 750;
+    padding: 10px 320px 10px 0px;
+  }
   footer nav {
     display: flex;
     flex-direction: row;
@@ -730,7 +751,7 @@ footer a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 27%;
+    width: 28%;
   }
   .cadre_pop {
     display: block;
@@ -917,18 +938,15 @@ footer a {
     border-top: 3px solid #f2f2f2;
     padding: 40px;
   }
-
   header nav .heberge_marseille:hover,
   header nav .activ_marseille:hover {
     border-bottom: none;
     border-top: 3px solid #0065fc;
   }
-
   header nav .heberge_marseille:hover a,
   header nav .activ_marseille:hover a {
     color: #0065fc;
   }
-
   header nav .heberge_marseille:focus,
   header nav .activ_marseille:focus {
     color: #f2f2f2;
@@ -1077,7 +1095,6 @@ footer a {
   .circle_info {
     font-size: 30px;
   }
-
   .container_desktop {
     display: flex;
     flex-wrap: nowrap;
@@ -1085,7 +1102,6 @@ footer a {
     flex-direction: row;
     align-items: flex-start;
   }
-
   #bloc-pop {
     background-color: #f2f2f2;
     display: flex;
@@ -1143,7 +1159,6 @@ footer a {
     min-width: 50%;
     padding: 5px;
   }
-
   .cadre_text h3 {
     display: block;
     font-size: 0.85em;
@@ -1151,7 +1166,6 @@ footer a {
     font-weight: 750;
     padding: 0px 0px 10px 0px;
   }
-
   .cadre_text p {
     display: block;
     font-size: 0.7em;
