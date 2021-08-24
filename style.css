@@ -274,6 +274,12 @@ label {
   height: 49px;
   margin: 5px;
 }
+label:active {
+  box-shadow: 0px 0px 10px #0065fc;
+}
+label:hover {
+  box-shadow: 0px 0px 10px #0065fc;
+}
 
 .circle-icon {
   display: flex;
@@ -288,6 +294,10 @@ label {
   position: relative;
   left: -2px;
   top: -2px;
+}
+.circle-icon:active,
+.circle-icon:hover {
+  box-shadow: 0px 0px 10px #0065fc;
 }
 .checkbox {
   display: flex;
@@ -667,6 +677,12 @@ footer a {
     color: black;
     padding: 5px 0px 50px 0px;
   }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
 
   /* Hebergement*/
   #nom_hebergement_marseille {
@@ -732,6 +748,12 @@ footer a {
     font-size: 1.075em;
     width: 100%;
     padding-top: 10px;
+  }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
   }
   /* Bloc Pop*/
   .hotel {
@@ -1354,6 +1376,16 @@ footer a {
     width: 100%;
     padding-top: 13px;
   }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  .circle-icon:active,
+  .circle-icon:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
   #bloc-pop {
     background-color: #f2f2f2;
     display: flex;
@@ -1382,6 +1414,16 @@ footer a {
     color: black;
     padding-bottom: 17px;
   }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  .circle-icon:active,
+  .circle-icon:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
 }
 @media all and (min-width: 1073px) {
   .hotel {
@@ -1390,5 +1432,15 @@ footer a {
     align-items: center;
     width: 85%;
     height: 146px;
+  }
+  label:active {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  label:hover {
+    box-shadow: 0px 0px 10px #0065fc;
+  }
+  .circle-icon:active,
+  .circle-icon:hover {
+    box-shadow: 0px 0px 10px #0065fc;
   }
 }
