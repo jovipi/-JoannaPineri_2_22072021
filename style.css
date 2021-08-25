@@ -424,18 +424,18 @@ label:hover {
   display: block;
   min-width: 52%;
 }
-.cadre_text h3 {
+.cadre_text .titre_h3 {
   display: block;
   font-size: 0.9em;
   color: black;
   padding: 10px 0px 10px 0px;
   font-weight: 800;
 }
-.cadre_text p {
+.cadre_text .texte_p {
   display: block;
   font-size: 0.8em;
   color: black;
-  padding: 0px 0px 50px 0px;
+  padding: 0px 0px 40px 0px;
 }
 .etoiles {
   display: block;
@@ -596,7 +596,7 @@ img .img1 {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-.cadre_activites p {
+.cadre_activites .titre_h4 {
   display: block;
   font-size: 0.7em;
   font-weight: 800;
@@ -664,14 +664,14 @@ footer a {
     font-size: 10px;
     padding: 5px 0px 0px 0px;
   }
-  .cadre_text h3 {
+  .cadre_text .titre_h3 {
     display: block;
     font-size: 0.9em;
     color: black;
     padding: 10px 0px 10px 0px;
     font-weight: 800;
   }
-  .cadre_text p {
+  .cadre_text .texte_p {
     display: block;
     font-size: 0.8em;
     color: black;
@@ -697,7 +697,7 @@ footer a {
     text-align: start;
     padding: 5px 35px 5px 0px;
   }
-  .etablissement_cadre_text h3 {
+  .etablissement_cadre_text .titre_h3 {
     display: block;
     width: 100%;
     text-align: start;
@@ -706,7 +706,7 @@ footer a {
     font-weight: 800;
     padding: 0px 0px 0px 5px;
   }
-  .etablissement_cadre_text p {
+  .etablissement_cadre_text .texte_p {
     display: block;
     font-size: 0.8em;
     color: black;
@@ -776,13 +776,13 @@ footer a {
   .cadre_text {
     display: block;
   }
-  .cadre_text p {
+  .cadre_text .texte_p {
     display: block;
     font-size: 0.7em;
     color: black;
     padding: 0px 0px 44px 0px;
   }
-  .cadre_text h3 {
+  .cadre_text .titre_h3 {
     font-size: 0.75em;
     color: black;
     font-weight: bold;
@@ -1174,14 +1174,14 @@ footer a {
     min-width: 50%;
     padding: 5px;
   }
-  .cadre_text h3 {
+  .cadre_text .titre_h3 {
     display: block;
     font-size: 0.85em;
     color: black;
     font-weight: bold;
     padding: 0px 0px 10px 0px;
   }
-  .cadre_text p {
+  .cadre_text .texte_p {
     display: block;
     font-size: 0.7em;
     color: black;
@@ -1239,7 +1239,7 @@ footer a {
     text-align: start;
     padding: 5px 10px 5px 10px;
   }
-  .etablissement_cadre_text h3 {
+  .etablissement_cadre_text .titre_h3 {
     display: block;
     width: 100%;
     text-align: start;
@@ -1249,7 +1249,7 @@ footer a {
     padding-bottom: 2px;
   }
 
-  .etablissement_cadre_text p {
+  .etablissement_cadre_text .texte_p {
     display: block;
     font-size: 0.8em;
     color: black;
@@ -1401,18 +1401,18 @@ footer a {
   }
 }
 @media all and (min-width: 991px) and (max-width: 1084px) {
-  .cadre_text h3 {
+  .cadre_text .titre_h3 {
     display: block;
     font-size: 0.8em;
     color: black;
     font-weight: bold;
     padding: 5px 0px 10px 0px;
   }
-  .cadre_text p {
+  .cadre_text .texte_p {
     display: block;
     font-size: 0.7em;
     color: black;
-    padding-bottom: 17px;
+    padding-bottom: 14px;
   }
   label:active {
     box-shadow: 0px 0px 10px #0065fc;
